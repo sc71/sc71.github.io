@@ -1,0 +1,125 @@
+body{
+    font-family: 'courier', serif;
+    background-color: #fff;
+    margin: 0px;
+    padding: 0px
+}
+
+wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 32px;
+    font-size: 0px;
+}
+
+
+.main_menu{
+    padding: 5px 0 5px 0;
+    line-height: 7vh;
+    font-size: 0px;
+    background-color: #283b3a;
+    vertical-align: top;
+}
+
+ul.main_menu{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+li.menu-normal{
+    float: right;
+    padding: 0 15px 0 15px;
+}
+
+.main_menu li{
+    display: inline;
+    font-size: 18px;
+}
+
+li.menu-sarah{
+    align-content: left;
+    font-size: 35px;
+    padding: 0 15px 0 15px;
+
+}
+
+.main_menu a{
+    text-decoration: none;
+    padding: 8px;
+    color: #afd1d0;
+    font-variant: small-caps;
+}
+
+.main_menu a:hover{
+    color: #fff;
+}
+
+.main-img{
+    width: 100vw;
+}
+
+.screen-item{
+    transform: translate(25%);
+    display: flex;
+}
+
+.screen-item img{
+    padding-top: 20px;
+    margin: 10px;
+    height: 70vh;
+    float: left;
+}
+
+.screen-item div{
+    margin-top: 200px;
+    margin-left: 300px;
+    position: absolute;
+    width: 30vw;
+    float: right;
+}
+
+.screen-item-h{
+    transform: translate(15%);
+    display: flex;
+}
+
+.screen-item-h img{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 10px;
+    width: 30vw;
+    height: 30vh;
+    float: left;
+}
+
+.screen-item-h div{
+    margin-top: 130px;
+    margin-left: 500px;
+    position: absolute;
+    width: 40vw;
+    float: right;
+}
+
+#special{
+    margin-top: 100px;
+}
+
+.row{
+    display: flex;
+    vertical-align: center
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column{
+    margin-left: 25%;
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 50vw;
+}
