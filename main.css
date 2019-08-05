@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body{
     font-family: 'courier', serif;
     background-color: #fff;
@@ -74,3 +77,39 @@ li.menu-sarah{
       flex: 50%;
     padding: 10%;
 }
+
+.roww{
+display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 4px;
+}
+
+.columnn{
+    -ms-flex: 25%;
+    flex: 23%;
+  max-width: 23%;
+  padding: 4px;
+}
+
+.columnn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .columnn {
+      -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .columnn {
+      -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
