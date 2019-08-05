@@ -1,48 +1,122 @@
-<!DOCTYPE html>
-    <html lang="en">
+* {
+  box-sizing: border-box;
+}
+body{
+    font-family: 'courier', serif;
+    background-color: #fff;
+    margin: 0px;
+    padding: 0px
+}
+
+wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 32px;
+    font-size: 0px;
+}
+
+
+.main_menu{
+    padding: 5px 0 5px 0;
+    line-height: 7vh;
+    font-size: 0px;
+    background-color: #283b3a;
+    vertical-align: top;
+}
+
+ul.main_menu{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+li.menu-normal{
+    float: right;
+    padding: 0 15px 0 15px;
+}
+
+.main_menu li{
+    display: inline;
+    font-size: 18px;
+}
+
+li.menu-sarah{
+    align-content: left;
+    font-size: 35px;
+    padding: 0 15px 0 15px;
+
+}
+
+.main_menu a{
+    text-decoration: none;
+    padding: 8px;
+    color: #afd1d0;
+    font-variant: small-caps;
+}
+
+.main_menu a:hover{
+    color: #fff;
+}
+
+.main-img{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.row {
+  display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+      flex: 50%;
+    max-width: 50%;
+    padding-top: 10%;
+    padding-left: 5%;
+}  
     
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>My Portfolio</title>
-        <link rel="stylesheet" href="main.css">
-    </head>
-        
-    <body>
-        <div id="wrapper">
-            <nav>
-                <ul class="main_menu">
-                    <li class="menu-sarah" ><a href="index.html">Sarah Chen</a></li>
-                    <li class="menu-normal"><a href="art.html">Art</a></li>
-                    <li class="menu-normal"><a href="code.html">Code</a></li>
-                    <li class="menu-normal"><a href="index.html">Home</a></li>
-                </ul>
-            </nav>
-        </div>
-        
-        
-        <div class = "row">
-            <div class = "column">
-                <img src="https://sc71.github.io/quizdemo.gif" alt="quizdemo.gif">
-                <h2>True/False Quiz</h2>
-                <p>The True/False Quiz Android app is an app that consists of 10 true or false questions. Each coorrect answer earns 100 points. After all questions are answered, the user's total score is displayed. This app works in both horizontal and vertical orientations and preserves data upon orientation change.</p>
-            </div>
-            <div class = "column">
-                <img src="https://sc71.github.io/roomdemo.gif" alt="roomdemo.gif">
-                <h2>A Room of Stuff</h2>
-                <p>A Room of Stuff is an interactive room that contains a magic 8 ball and a computer with which you can play Space Invaders.</p>
-            </div>
-            <div class = "column">
-                <img src="https://sc71.github.io/restaurantdemo.gif" alt="restaurantdemo.gif">
-                <h2>Restaurants</h2>
-                <p>The Restaurant app uses the online database Backendless. With this app you can create a personal account in which you can record information about restaurants.</p>
-            </div>
-            <div class = "column">
-                <img src="https://sc71.github.io/motivationaldogdemo.gif" alt="motivationaldog.gif">
-                 <h2>Motivational Dog</h2>
-                <p>Motivational Dog takes one image of a shiba inu from the shibe.online API and one quote from the quotesondesign.com API and displays them. This program also uses picasso and retrofit.</p>
-            </div>
-        </div>
-        
-    </body>
-    </html>
+.roww{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+}
+
+.columnn{
+    flex: 23%;
+  max-width: 23%;
+  padding: 4px;
+}
+
+.columnn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .columnn {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .columnn {
+    flex: 100%;
+      max-width: 100%;
+    }
+    .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
