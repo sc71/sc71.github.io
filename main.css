@@ -88,6 +88,7 @@ p{
 .roww{
   display: flex;
   padding: 4px;
+    flex-wrap: wrap;
 }
 
 .columnn{
@@ -103,28 +104,29 @@ p{
 }
 
 @media screen and (max-width: 800px) {
-    .column{
+    .columnn{
         flex: 50%;
     max-width: 50%;
     }
 }
 
-@media screen and (max-width: 900px) {
-  .columnn {
+@media screen and (max-width: 1100px) {
+  .column {
     flex: 50%;
     max-width: 50%;
   }
 }
 
+
 @media screen and (max-width: 600px) {
-    .column {
+    .columnn {
     flex: 100%;
     max-width: 100%;
   }
 }
 
-@media screen and (max-width: 700px) {
-  .columnn {
+@media screen and (max-width: 900px) {
+  .column {
     flex: 100%;
       max-width: 100%;
     }
